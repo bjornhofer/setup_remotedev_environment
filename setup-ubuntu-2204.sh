@@ -25,9 +25,10 @@ sudo usermod -a -G docker azuser
 
 # Visual Studio Code
 mkdir -p /opt/microsoft/visualstudio
+
 curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output /opt/microsoft/visualstudio/vscode_cli.tar.gz
 cd /opt/microsoft/visualstudio
 tar -xf vscode_cli.tar.gz
 rm -f vscode_cli.tar.gz
 ln -s /opt/microsoft/visualstudio/code /usr/bin/code
-
+chmod -R 777 /opt/microsoft/visualstudio
