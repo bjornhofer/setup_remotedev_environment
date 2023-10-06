@@ -31,4 +31,6 @@ cd /opt/microsoft/visualstudio
 tar -xf vscode_cli.tar.gz
 rm -f vscode_cli.tar.gz
 ln -s /opt/microsoft/visualstudio/code /usr/bin/code
+cp /tmp/setup_remotedev_environment/install-visualstudiocodetunnel.sh /opt/microsoft/visualstudio
+cp /tmp/setup_remotedev_environment/update-visulstudiocode.sh /opt/microsoft/visualstudio
 chmod -R 777 /opt/microsoft/visualstudio
